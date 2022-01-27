@@ -74,8 +74,8 @@ Output:
 10 (because 8 divided by 4 is 2, times 5 is 10)
 */
 
-export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+export function divideThenMultiply(a, b, c) {
+    return a / b * c;
 }
 
 
@@ -91,8 +91,9 @@ Output:
 [8, 4, 5]
 */
 
-export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+export function returnAsAnArray(a, b, c) {
+    return [a, b, c];
+    //return ; 
 }
 
 // This function should take in three numbers and return those numbers mushed together as a string
@@ -107,8 +108,8 @@ Output:
 '845'
 */
 
-export function returnAsAString(firstNumber, secondNumber, thirdNumber) {
-    return true;
+export function returnAsAString(a, b, c) {
+    return a + b + c;
 }
 
 // This function should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number

@@ -23,13 +23,14 @@ skip('this test should be skipped', (expect) => {
 });*/
 
 import { 
-    multiplyBySeven, multiplyBy12ThenHalve, addExclamationPoints,
+    multiplyBySeven, multiplyBy12ThenHalve, addExclamationPoints, divideThenMultiply, returnAsAnArray,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
 
 test('this test should pass', (expect) => {
     const expected = 14;
+    //const expectedTwo = 
 
     const actual = multiplyBySeven(2);
 
@@ -62,4 +63,32 @@ test('this test should pass', (expect) => {
     const actual = addExclamationPoints('testing');
 
     expect.equal(actual, expected);
+});
+
+test('this test should pass', (expect) => {
+    const expected = 10;
+
+    const actual = divideThenMultiply(8, 4, 5);
+
+    expect.equal(actual, expected);
+});
+
+test('this test should pass', (expect) => {
+    const expected = [8, 4, 5];
+
+    const actual = returnAsAnArray(8, 4, 5);
+
+    expect.deepEqual(actual, expected);
+});
+
+test('this test should pass', (expect) => {
+    const expected = [8, 4, 5];
+
+    //const expectedtwo = [];
+
+    const actual = returnAsAnArray(8, 4, 5);
+   // const actualtwo = returnAsAnArray(8, 4, 5);
+
+    expect.deepEqual(actual, expected);
+    //expect.deepEqual(actualtwo, expectedtwo);
 });
