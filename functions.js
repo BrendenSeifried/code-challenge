@@ -12,8 +12,9 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(a) {
+    return a + '!!!';
+    
 }
 
 // This function should take in a number and multiply it by seven
@@ -28,12 +29,18 @@ Output:
 28 
 */
 
-export function multiplyBySeven(num) {
-    return true;
+export function multiplyBySeven(c) {
+    return c * 7;
+    
+    //return true;
+    //console.log(c * d / 2);
+   // console.log(multiplyBySeven);
 }
 
-// This function should take in a number and multiply it by twelve then cut the result in half
+//console.log();
 
+
+// This function should take in a number and multiply it by twelve then cut the result in half  
 /* 
 Input:
 
@@ -45,9 +52,14 @@ Output:
 
 */
 
-export function multiplyBy12ThenHalve(num) {
-    return true;
+export function multiplyBy12ThenHalve(c) {
+    return c * 12 / 2;
+    
+    //return true;
+    //console.log(c * d / 2);
+    //console.log(multiplyBySeven);
 }
+//multiplyBy12ThenHalve(4, 12);
 
 
 // This function should take in three numbers, divide the first by the second, then multiply the result by the third
@@ -62,8 +74,8 @@ Output:
 10 (because 8 divided by 4 is 2, times 5 is 10)
 */
 
-export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+export function divideThenMultiply(a, b, c) {
+    return a / b * c;
 }
 
 
@@ -79,8 +91,9 @@ Output:
 [8, 4, 5]
 */
 
-export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+export function returnAsAnArray(a, b, c) {
+    return [a, b, c];
+    //return ; 
 }
 
 // This function should take in three numbers and return those numbers mushed together as a string
@@ -95,8 +108,8 @@ Output:
 '845'
 */
 
-export function returnAsAString(firstNumber, secondNumber, thirdNumber) {
-    return true;
+export function returnAsAString(a, b, c) {
+    return a + b + c;
 }
 
 // This function should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number
